@@ -31,6 +31,17 @@ module.exports = {
                 'myd/static': path.resolve(__dirname, './static')
             }
         },
+        // output:{
+        //     path:path.resolve(__dirname, './dist/myd'),
+        //     filename: '[name].js',
+        // },
     },
-    lintOnSave: false
+    lintOnSave: false,
+    publicPath: process.env.NODE_ENV === 'development'
+    ? '/'
+    : '/myd/'
+    // outputDir: path.resolve(__dirname, './dist/'),
+    //assetsDir: './myd/',
+    //indexPath: 'index.html',
+
 }

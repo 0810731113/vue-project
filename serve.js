@@ -27,6 +27,6 @@ app.get('/*',function(req,res){
 })
 
 if (!module.parent) {
-    app.listen(8888);
+    app.listen(8080);
     console.log('Express started on port 8888');
 }
