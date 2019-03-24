@@ -1,0 +1,684 @@
+export const SIDEBARS_SHOP = [{
+  index: '1',
+  icon: 'icon-MenDianGuanLi',
+  name: ' 门店管理',
+  route: '/',
+  child: [{
+    index: '2',
+    icon: 'icon-MenDianXinXi',
+    name: '首页',
+    route: '/index'
+  }, {
+    index: '3',
+    icon: 'icon-MenDianXinXi',
+    name: '门店信息',
+    route: '/shopinfo'
+  }, {
+    index: '4',
+    icon: 'icon-canyinmobanxiafa',
+    name: '开店向导',
+    route: '/guidance'
+  }]
+}, {
+  index: '5',
+  icon: 'icon-YingYeSheDing',
+  name: ' 营业设定',
+  route: '/business',
+  child: [{
+    index: '6',
+    icon: 'icon-yingyecanduan',
+    name: '营业餐段',
+    route: '/business/shift'
+  }, {
+    index: '7',
+    icon: 'icon-shouyinbanbie',
+    name: '收银班别',
+    route: '/business/cashier'
+  }, {
+    index: '8',
+    icon: 'icon-xiaoshoufenlei-',
+    name: '销售分类',
+    route: '/business/sales'
+  }, {
+    index: '9',
+    icon: 'shourufenlei-',
+    name: '收入分类',
+    route: '/business/revenue'
+  }, {
+    index: '10',
+    icon: 'zhifufangshi',
+    name: '付款方式',
+    route: '/business/payment'
+  }, {
+    index: '11',
+    icon: 'guazhangduixiang',
+    name: '挂账对象',
+    route: '/business/creditaccount'
+  }, {
+    index: '12',
+    icon: 'songcansheding',
+    name: '送餐者',
+    route: '/business/deliverer'
+  }, {
+    index: '13',
+    icon: 'dingdanlaiyuan',
+    name: '订单来源',
+    route: '/business/ordersource'
+  }, {
+    index: '14',
+    icon: 'dingdanlaiyuan',
+    name: '外卖设置',
+    route: '/business/takeout'
+  }]
+}, {
+  index: '15',
+  icon: 'icon-CanZhuoGuanLi',
+  name: '桌位',
+  route: '/tables',
+  child: [{
+    index: '16',
+    icon: 'icon-can-zhuo-lei-xing',
+    name: '餐桌类型',
+    route: '/tables/type'
+  }, {
+    index: '17',
+    icon: 'icon-yingye-qu-yu',
+    name: '餐桌区域',
+    route: '/tables/area'
+  }, {
+    index: '18',
+    icon: 'icon-yingye-qu-yu',
+    name: '餐桌管理',
+    route: '/tables/management'
+  }, {
+    index: '19',
+    icon: 'cai-zhuo-zhuang-tai-yanse',
+    name: '餐桌状态颜色',
+    route: '/tables/states'
+  }]
+}, {
+  index: '20',
+  icon: 'icon-CaiPinGuanLi',
+  name: '菜品管理',
+  route: '/dishes',
+  child: [{
+    index: '21',
+    icon: 'caipinyaoqiu-',
+    name: '菜品要求',
+    route: '/dishes/explain'
+  }, {
+    index: '22',
+    icon: 'dailishangliebiao',
+    name: '菜品分类',
+    route: '/dishes/classify'
+  }, {
+    index: '23',
+    icon: 'caipinyaoqiu-',
+    name: '菜品配料',
+    route: '/dishes/ingredient'
+  }, {
+    index: '24',
+    icon: 'dailishangliebiao',
+    name: '菜品',
+    route: '/dishes/menu'
+  }, {
+    index: '25',
+    icon: 'taocanshezhi',
+    name: '套餐',
+    route: '/dishes/setmeal'
+  }, {
+    index: '26',
+    icon: 'houchu-da-yin-',
+    name: '菜品打印部门',
+    route: '/dishes/menuPrint'
+  }, {
+    index: '27',
+    icon: 'zhekoufangan',
+    name: '出售方案',
+    route: '/dishes/sellPlan'
+  },
+    // {
+    // index: '88',
+    // icon: 'tichengcai',
+    // name: '提成菜设置',
+    // route: '/dishes/extractSetting'
+    // }
+  ]
+}, {
+  index: '28',
+  icon: 'icon-YouHuiSheZhi',
+  name: '优惠设置',
+  route: '/preferentialsetting',
+  child: [{
+    index: '29',
+    icon: 'zhekoufangan',
+    name: '折扣方案',
+    route: '/preferential/discountscheme'
+  }, {
+    index: '30',
+    icon: 'tejiacai',
+    name: '菜品特价',
+    route: '/preferential/bargainSale'
+  }, {
+    index: '31',
+    icon: 'caipinmaijian',
+    name: '菜品买减',
+    route: '/preferential/buygift'
+  }, {
+    index: '32',
+    icon: 'jinemanjian',
+    name: '金额满减',
+    route: '/preferential/bargainFull'
+  }, {
+    index: '33',
+    icon: 'shouyinbanbie',
+    name: '会员价管理',
+    route: '/preferential/vipprice'
+  }]
+}, {
+  index: '34',
+  icon: 'icon-BeiZhuSheZhi',
+  name: '营业设置',
+  route: '/preferentialsetting',
+  child: [{
+    index: '35',
+    icon: 'tuicailiyou',
+    name: '退菜理由',
+    route: '/businesssetting/backreason'
+  }, {
+    index: '36',
+    icon: 'zengcailiyou',
+    name: '赠菜理由',
+    route: '/businesssetting/giftreason'
+  }, {
+    index: '37',
+    icon: 'dazhiliyou',
+    name: '打折理由',
+    route: '/businesssetting/discountreason'
+  }, {
+    index: '38',
+    icon: 'fanjiezhangliyou',
+    name: '反结账理由',
+    route: '/businesssetting/rechecreason'
+  }, {
+    index: '39',
+    icon: 'waisongbeizhu',
+    name: '外送备注',
+    route: '/businesssetting/deliverynote'
+  }, {
+    index: '40',
+    icon: 'zhengdanbeizhu',
+    name: '账单备注',
+    route: '/businesssetting/billnote'
+  }, {
+    index: '41',
+    icon: 'moren',
+    name: '菜品单位',
+    route: '/businesssetting/orderuint'
+  }]
+}, {
+  index: '42',
+  icon: 'icon-SheZhi',
+  name: '设置',
+  route: '/setting',
+  child: [{
+    index: '43',
+    icon: 'canshushezhi',
+    name: '系统选项',
+    route: '/setting/systemoptions'
+  }, {
+    index: '44',
+    icon: 'caipindazhe',
+    name: '打印机',
+    route: '/setting/printer'
+  }, {
+    index: '45',
+    icon: 'chucaidian',
+    name: '打印部门',
+    route: '/setting/foodout'
+  }, {
+    index: '46',
+    icon: 'chuancaidian',
+    name: '传菜点',
+    route: '/setting/foodpass'
+  }, {
+    index: '47',
+    icon: 'WaiJieSheBeiSheZhi',
+    name: '站点',
+    route: '/setting/host'
+  }, {
+    index: '48',
+    icon: 'xiaopiaogeshi-',
+    name: '小票格式配置',
+    route: '/setting/report'
+  }, {
+    index: '49',
+    icon: 'waisongbeizhu',
+    name: '外卖菜品映射',
+    route: '/setting/takeout'
+  }, {
+    index: '50',
+    icon: 'waisongbeizhu',
+    name: '服务费设置',
+    route: '/setting/service'
+  }]
+}, {
+  index: '51',
+  icon: 'icon-BuMenYuanGongGuanLi',
+  name: '员工管理',
+  route: '/employe',
+  child: [{
+    index: '52',
+    icon: 'canshushezhi',
+    name: '部门',
+    route: '/employe/department'
+  }, {
+    index: '53',
+    icon: 'chang-yong-cai-dan-she-zhi',
+    name: '角色权限',
+    route: '/employe/shoprole'
+  }, {
+    index: '54',
+    icon: 'chang-yong-cai-dan-she-zhi',
+    name: '用户',
+    route: '/employe/shopuser'
+  }, {
+    index: '55',
+    icon: 'chang-yong-cai-dan-she-zhi',
+    name: '操作日志',
+    route: '/employe/log'
+  }, {
+    index: '56',
+    icon: 'yuan-gong-zhang-hao',
+    name: '指纹配置',
+    route: '/employe/fingerPrintConfig'
+  }]
+}, {
+  index: '57',
+  icon: 'icon-cai-pin-shun-xu',
+  name: '账单处理',
+  route: '/bill',
+  child: [{
+    index: '58',
+    icon: 'shujudaochudaoru',
+    name: '挂账处理',
+    route: '/bill/chargebill'
+  }, {
+    index: '59',
+    icon: 'dingdanlaiyuan',
+    name: '账单隐藏',
+    route: '/bill/hidebill'
+  }, {
+    index: '60',
+    icon: 'dingdanlaiyuan',
+    name: '账单上传',
+    route: '/bill/uploadbill'
+  }, {
+    index: '61',
+    icon: '',
+    name: '账单上传记录',
+    route: '/bill/uploadlog'
+  }]
+}, {
+  index: '62',
+  icon: 'XiTongFuWu',
+  name: ' 系统服务',
+  route: '/service',
+  child: [{
+    index: '63',
+    icon: 'MenDianXinXi',
+    name: '更新说明',
+    route: '/service/releases'
+  }]
+}];
+
+export const SIDEBARS_SYSTEM = [{
+  index: '1',
+  icon: '',
+  name: ' 商家管理',
+  child: [{
+    icon: '',
+    name: '增值服务',
+    route: '/business/valueadded'
+  }]
+}, {
+  index: '2',
+  icon: '',
+  name: '工具',
+  child: [{
+    icon: '',
+    name: '系统小票模板',
+    route: '/tool/systemreporttemplate'
+  }]
+}, {
+  index: '1',
+  icon: '',
+  name: ' 终端管理',
+  child: [{
+    icon: '',
+    name: '概况',
+    route: '/terminal/general'
+  }]
+}, {
+  index: '1',
+  icon: '',
+  name: ' 版本发布管理',
+  child: [{
+    icon: '',
+    name: '版本升级',
+    route: '/release/upgrade'
+  }, {
+    icon: '',
+    name: '版本发布',
+    route: '/release/publish'
+  }, {
+    icon: '',
+    name: '软件类型',
+    route: '/release/software'
+  }, {
+    icon: '',
+    name: '灰度发布管理',
+    route: '/release/gatedlaunch'
+  }, {
+    icon: '',
+    name: '门店功能检测',
+    route: '/release/functiondetection'
+  }]
+}, {
+  index: '3',
+  icon: '',
+  name: '反馈信息管理',
+  child: [{
+    icon: '',
+    name: '反馈信息',
+    route: '/feedback/info'
+  }]
+}, {
+  index: '4',
+  icon: '',
+  name: '公告通知',
+  child: [{
+    icon: '',
+    name: '公告通知',
+    route: '/announcement/notices'
+  }]
+}, {
+  index: '5',
+  icon: '',
+  name: '对接管理',
+  child: [{
+    icon: '',
+    name: '第三方对接管理',
+    route: '/interface/thirdparty'
+  }, {
+    icon: '',
+    name: '接口类型管理',
+    route: '/interface/type'
+  }]
+}];
+
+export const SIDEBARS_COMPANY = [{
+  'index': '73',
+  'icon': 'icon-CanYinQiYeGuanLi',
+  'name': '餐饮公司',
+  'route': '/cateringcompany',
+  'child': [{
+    'index': '74',
+    'icon': 'icon-MenDianXinXi',
+    'name': '公司信息',
+    'route': 'test.www.mwpos.cn/MwCompany/Sys/CompanyInfo',
+    'child': null
+  }]
+}, {
+  'index': '90',
+  'icon': 'icon-KeHuGuanLi',
+  'name': '客户管理',
+  'route': '/customer',
+  'child': [{
+    'index': '91',
+    'icon': 'icon-GeRenKeHuLieBiao',
+    'name': '个人客户列表',
+    'route': 'test.www.mwpos.cn/MwShop/CustSys/CustPMain',
+    'child': null
+  }, {
+    'index': '92',
+    'icon': 'icon-GeRenKeHuLieBiao',
+    'name': '公司客户列表',
+    'route': 'test.www.mwpos.cn/MwShop/CustSys/CustCMain',
+    'child': null
+  }]
+}, {
+  'index': '75',
+  'icon': 'icon-MenDianGuanLi',
+  'name': '门店管理',
+  'route': '/shopmanagement',
+  'child': [{
+    'index': '76',
+    'icon': 'icon-dailishangliebiao',
+    'name': '门店列表',
+    'route': '/shopmanagement/shoplist',
+    'child': null
+  }, {
+    'index': '77',
+    'icon': 'icon-men-dian-fen-zu',
+    'name': '门店分组',
+    'route': 'test.www.mwpos.cn/MwCompany/Sys/ShopGroupMain',
+    'child': null
+  }, {
+    'index': '78',
+    'icon': null,
+    'name': '连锁标准化设置',
+    'route': 'test.www.mwpos.cn/MwCompany/SetUp/NotMaintainMain',
+    'child': null
+  }, {
+    'index': '79',
+    'icon': 'icon-canyinmobanxiafa',
+    'name': '营业模板列表',
+    'route': 'test.www.mwpos.cn/MwCompany/Tools/TempList',
+    'child': null
+  }, {
+    'index': '252',
+    'icon': 'icon-xiaoshoufenlei-',
+    'name': 'ERP系统对接',
+    'route': 'test.www.mwpos.cn/MwCompany/Dishes/ErpSyetemSetting',
+    'child': null
+  }]
+}, {
+  'index': '223',
+  'icon': 'icon-YingYeSheDing',
+  'name': '营业设定',
+  'route': '/business',
+  'child': [{
+    'index': '224',
+    'icon': 'icon-xiaoshoufenlei-',
+    'name': '销售分类',
+    'route': '/business/sales',
+    'child': null
+  }, {
+    'index': '225',
+    'icon': 'icon-shourufenlei-',
+    'name': '收入分类',
+    'route': '/business/revenue',
+    'child': null
+  }, {
+    'index': '1000',
+    'icon': 'icon-fukuanfangshi-',
+    'name': '付款方式',
+    'route': '/business/payment',
+    'child': null
+  }]
+}, {
+  'index': '226',
+  'icon': 'icon-CaiPinGuanLi',
+  'name': '菜品库',
+  'route': '/dishes',
+  'child': [{
+    'index': '227',
+    'icon': 'icon-caipinyaoqiu-',
+    'name': '菜品要求',
+    'route': '/dishes/explain',
+    'child': null
+  }, {
+    'index': '228',
+    'icon': 'icon-caipinyaoqiu-',
+    'name': '菜品配料',
+    'route': '/dishes/ingredient',
+    'child': null
+  }, {
+    'index': '271',
+    'icon': 'icon-dailishangliebiao',
+    'name': '菜品分类',
+    'route': '/dishes/classify',
+    'child': null
+  }, {
+    'index': '229',
+    'icon': 'icon-dailishangliebiao',
+    'name': '菜品',
+    'route': '/dishes/menu',
+    'child': null
+  }, {
+    'index': '230',
+    'icon': 'icon-taocanshezhi',
+    'name': '套餐',
+    'route': '/dishes/setmeal',
+    'child': null
+  }, {
+    'index': '231',
+    'icon': 'icon-taocanshezhi',
+    'name': '菜品打印部门',
+    'route': '/dishes/menuPrint',
+    'child': null
+  }]
+}, {
+  'index': '880',
+  'icon': 'icon-GongJu',
+  'name': '集团管理',
+  'route': '/companyManagement',
+  'child': [{
+    'index': '881',
+    'icon': 'icon-taocanshezhi',
+    'name': '集团菜单',
+    'route': '/dishes/cookbook',
+    'child': null
+  }, {
+    'index': '882',
+    'icon': 'icon-shujuxiafa',
+    'name': '数据下发',
+    'route': '/dishes/shopupdate',
+    'child': null
+  }, {
+    'index': '883',
+    'icon': 'icon-canyinmobanxiafa',
+    'name': '更新日志',
+    'route': '/dishes/updatelog',
+    'child': null
+  }]
+}, {
+  'index': '990',
+  'icon': 'icon-YouHuiSheZhi',
+  'name': '优惠设置',
+  'route': '/preferential',
+  'child': [{
+    'index': '991',
+    'icon': '',
+    'name': '折扣方案',
+    'route': '/preferential/discountscheme',
+    'child': null
+  }, {
+    'index': '992',
+    'icon': '',
+    'name': '菜品特价',
+    'route': '/preferential/bargainSale',
+    'child': null
+  }, {
+    'index': '993',
+    'icon': '',
+    'name': '金额满减',
+    'route': '/preferential/bargainFull',
+    'child': null
+  }, {
+    'index': '994',
+    'icon': '',
+    'name': '菜品买减',
+    'route': '/preferential/buygift',
+    'child': null
+  }]
+}, {
+  'index': '266',
+  'icon': 'icon-zhangdanchuli',
+  'name': '账单调账',
+  'route': '/reconciliation',
+  'child': [{
+    'index': '267',
+    'icon': '',
+    'name': '账单调账',
+    'route': '/reconciliation/detail',
+    'child': null
+  }, {
+    'index': '268',
+    'icon': '',
+    'name': '调账明细',
+    'route': '/reconciliation/log',
+    'child': null
+  }]
+}, {
+  'index': '80',
+  'icon': 'icon-BuMenYuanGongGuanLi',
+  'name': '系统设置',
+  'route': '/setting',
+  'child': [{
+    'index': '81',
+    'icon': 'icon-bumenliebiao',
+    'name': '部门',
+    'route': 'test.www.mwpos.cn/MwCompany/Sys/CompanyDeptMain',
+    'child': null
+  }, {
+    'index': '82',
+    'icon': 'icon-zhigongquanxian',
+    'name': '角色权限',
+    'route': 'test.www.mwpos.cn/MwCompany/Sys/CompanyRoleMain',
+    'child': null
+  }, {
+    'index': '83',
+    'icon': 'icon-yuan-gong-zhang-hao',
+    'name': '用户',
+    'route': 'test.www.mwpos.cn/MwCompany/Sys/CompanyUserMain',
+    'child': null
+  }, {
+    'index': '258',
+    'icon': 'icon-canyinmobanxiafa',
+    'name': '高层消费(指纹)管理',
+    'route': '/setting/seniormanagement',
+    'child': null
+  }, {
+    'index': '259',
+    'icon': 'icon-dayinbumen',
+    'name': '打印部门',
+    'route': '/setting/foodout',
+    'child': null
+  }]
+}, {
+  'index': '84',
+  'icon': 'icon-GongJu',
+  'name': '工具',
+  'route': '/tool',
+  'child': [{
+    'index': '85',
+    'icon': 'icon-shujudaochudaoru',
+    'name': '基础数据导出导入',
+    'route': 'test.www.mwpos.cn/MwCompany/Template/DataOperation',
+    'child': null
+  }]
+}, {
+  'index': '86',
+  'icon': 'icon-CanYinQiYeLieBiao',
+  'name': '公告通知',
+  'route': '/announcement',
+  'child': [{
+    'index': '87',
+    'icon': 'canyinmobanxiafa',
+    'name': '公告通知',
+    'route': 'test.www.mwpos.cn/MwCompany/Note/NoteList',
+    'child': null
+  }]
+}];

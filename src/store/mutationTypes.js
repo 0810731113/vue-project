@@ -1,0 +1,36 @@
+// user
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const CLEAR_LOGIN_ERROR = 'CLEAR_LOGIN_ERROR';
+export const FETCH_USER_INFO = 'FETCH_USER_INFO';
+export const FETCH_USER_AUTH_LIST = 'FETCH_USER_AUTH_LIST';
+
+// 省市区联动
+export const FETCH_PROVINCE_LIST = 'FETCH_PROVINCE_LIST';
+export const FETCH_CITY_LIST = 'FETCH_CITY_LIST';
+export const FETCH_DISTRICT_LIST = 'FETCH_DISTRICT_LIST';
+export const SET_IFRAME_INFO = 'SET_IFRAME_INFO';
+
+// errors
+export const LOADING = 'LOADING';
+export const SHOW_ERROR = 'SHOW_ERROR';
+
+// shop
+export const FETCH_SHOP_USAGE_DATA = 'FETCH_SHOP_USAGE_DATA';
+export const FETCH_SHOP_INFO = 'FETCH_SHOP_INFO';
+export const UPDATE_SHOP_INFO = 'UPDATE_SHOP_INFO';
+
+// guidance
+export const FETCH_ALL_GUIDANCE = 'FETCH_ALL_GUIDANCE';
+export const UPDATE_STEP_OF_GUIDANCE = 'UPDATE_STEP_OF_GUIDANCE';
+
+// system
+export const FETCH_SYSTEM_MENU = 'FETCH_SYSTEM_MENU';
+
+// common
+export const FETCH_COMPANY_MENU_CLASSIFY_LIST = 'FETCH_COMPANY_MENU_CLASSIFY_LIST';
+export const FETCH_MENU_CLASSIFY_LIST = 'FETCH_MENU_CLASSIFY_LIST';
+export const FETCH_MENU_LIST = 'FETCH_MENU_LIST';
+
+// switch report token
+export const SWITCH_REPORT_TOKEN = 'SWITCH_REPORT_TOKEN';

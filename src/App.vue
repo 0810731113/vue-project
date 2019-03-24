@@ -1,20 +1,28 @@
 <template>
   <div id="app">
-    <!--<div id="nav">-->
-      <!--<router-link to="/">Home</router-link> |-->
-      <!--<router-link to="/about">About</router-link>-->
-    <!--</div>-->
-    <router-view/>
+    <router-view></router-view>
+    <Notification :show="isError && showToast" :msg="errorMsg"/>
   </div>
-</template>
+</template>npm
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<script>
+    import {mapState, mapActions} from 'vuex';
+    import { Notification} from 'components';
+    export default {
+        name: 'app',
+        components:{
+            Notification
+        },
+        computed: mapState({
+            showToast: state => state.error.showToast,
+            isError: state => state.error.errorStatus,
+            errorMsg: state => state.error.errorMsg,
+        }),
+        created() {
+            if (sessionStorage.getItem('isIframe') === 'true') {
+                // ToDo (Ben Li) accessing a cross-origin frame.
+                document.domain = 'mwpos.cn';
+            }
+        }
+    };
+</script>

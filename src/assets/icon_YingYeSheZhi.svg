@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_营业设置</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="餐厅后台-UI3.0---UI-KIT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="餐厅门店系统-3.0-MAIN-INDEX" transform="translate(-22.000000, -632.000000)">
+            <g id="icon_营业设置" transform="translate(23.000000, 632.000000)">
+                <path d="M15.8397928,2.94631003 C15.8166314,3.10704883 15.8049383,3.26981785 15.8049383,3.43402778 C15.8049383,5.52277022 17.711351,7.23854167 20.0877315,7.23854167 C20.1046597,7.23852228 20.1046597,7.23852228 20.1215657,7.23842551 L20.625,7.23496758 L20.625,20.9967624 C20.625,22.3811587 19.5085377,23.5 18.1217624,23.5 L2.00323761,23.5 C0.618841339,23.5 -0.5,22.3835377 -0.5,20.9967624 L-0.5,4.87823761 C-0.5,3.49384134 0.616462349,2.375 2.00323761,2.375 L15.344904,2.375 L15.9221146,2.375 L15.8397928,2.94631003 Z" id="Combined-Shape" stroke="#6f6f6f"></path>
+                <circle id="Oval-90" fill="#6f6f6f" cx="21.0833333" cy="2.875" r="2.875"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
