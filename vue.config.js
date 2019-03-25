@@ -37,9 +37,9 @@ module.exports = {
         // },
     },
     lintOnSave: false,
-    publicPath: process.env.NODE_ENV === 'development'
-    ? '/'
-    : '/myd/'
+    // publicPath: process.env.NODE_ENV === 'development'
+    // ? '/'
+    // : '/myd/'
     // outputDir: path.resolve(__dirname, './dist/'),
     //assetsDir: './myd/',
     //indexPath: 'index.html',
