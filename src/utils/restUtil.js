@@ -56,16 +56,16 @@ axios.interceptors.response.use((response) => {
   let timeOut = 1500;
   if (sysErrCode === UNAUTHORIZED) {
     showErrorModal('登录信息失效，请重新登录');
-    setTimeout(Config.tokenUnEffect, timeOut);
+    //setTimeout(Config.tokenUnEffect, timeOut);
   } else if (sysErrCode === '403') {
     handleError(data.err, response.config);
-    setTimeout(() => location.href = process.env.VUE_APP_BM_HOST + 'bmanage/index', timeOut)
+    //setTimeout(() => location.href = process.env.VUE_APP_BM_HOST + 'bmanage/index', timeOut)
   } else if (data.err) {
     handleError(data.err, response.config);
   } else if (response.data.errNo !== 0) {
     if (response.data.errNo === 401) {
       showErrorModal('登录信息失效，请重新登录');
-      setTimeout(Config.tokenUnEffect, timeOut);
+      //setTimeout(Config.tokenUnEffect, timeOut);
     } else {
       handleError({errNo: '' + response.data.errNo, errMsg: response.data.errMsg}, response.config);
     }

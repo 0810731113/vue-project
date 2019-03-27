@@ -29,19 +29,19 @@ export const getToken = () => {
   }*/
   const token = local.getInstance().getItem(LOCAL_KEY_PHPSESSID)|| getCookies('PHPSESSID');
   if (!token && process.env.NODE_ENV !== "development") {
-    location.href = process.env.VUE_APP_BM_HOST + 'bmanage/account/login';
+    //location.href = process.env.VUE_APP_BM_HOST + 'bmanage/account/login';
   }
   return token;
 };
 
 export const onLogOut = () => {
   local.getInstance().removeItem(LOCAL_KEY_ACCOUNT_INFO);
-  location.href = process.env.VUE_APP_BM_HOST + 'passport/logout.html';
+  //location.href = process.env.VUE_APP_BM_HOST + 'passport/logout.html';
 };
 export const tokenUnEffect = ()=>{
   if(process.env.NODE_ENV !== "development"){
     local.getInstance().removeItem(LOCAL_KEY_PHPSESSID);
-    location.href = process.env.VUE_APP_BM_HOST + 'bmanage/account/login';
+    //location.href = process.env.VUE_APP_BM_HOST + 'bmanage/account/login';
   }
 }
 
@@ -64,10 +64,10 @@ export const linkToReport = async () => {
       password: account.pwd
     };
     this.$jsonp(`${getReportUrlPre()}Account/CheckLogin`, params).then(data => {
-      window.parent.location.href = (`${getReportUrlPre()}SubShop/Daily/ShiftBalance`);
+      //window.parent.location.href = (`${getReportUrlPre()}SubShop/Daily/ShiftBalance`);
     });
   } else {
-    window.open(`${getReportUrl()}myd_report?token=${encodeURIComponent(token)}&shopKind=${shopKind}`);
+    //window.open(`${getReportUrl()}myd_report?token=${encodeURIComponent(token)}&shopKind=${shopKind}`);
   }
 
   return true;
